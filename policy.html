@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Privacy Policy </title>
+    <style>
+    				/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+    transition: background 0.5s ease-in-out;
+}
+
+/* Header */
+header {
+    background: #007bff;
+    color: white;
+    padding: 15px 0;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+header:hover {
+    background: #0056b3;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: bold;
+    position: relative;
+    transition: color 0.3s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ffcc00;
+}
+
+nav ul li a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background: #ffcc00;
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+    transform: scaleX(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+nav ul li a:hover::after {
+    transform: scaleX(1);
+}
+
+main {
+    width: 90%; /* Adjusted width for responsiveness */
+    max-width: 1800px; /* Adjusted for wider laptops/desktops */
+    margin: 30px auto;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    opacity: 0;
+    animation: fadeInUp 1s ease-in-out forwards;
+}
+
+/* Section */
+h1 {
+    text-align: center;
+    color: #007bff;
+    transform: scale(0.9);
+    opacity: 0;
+    animation: popIn 0.6s ease-in-out forwards;
+}
+
+h2 {
+    color: #0056b3;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 5px;
+    margin-top: 20px;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+}
+
+h2:hover {
+    color: #ffcc00;
+    transform: translateX(10px);
+}
+
+p, ul {
+    font-size: 1.1em;
+}
+
+/* List Items */
+ul {
+    padding-left: 20px;
+}
+
+ul li {
+    margin-bottom: 10px;
+    position: relative;
+    left: -10px;
+    opacity: 0;
+    animation: slideInLeft 0.5s ease-in-out forwards;
+}
+
+ul li:nth-child(odd) {
+    animation-delay: 0.2s;
+}
+
+ul li:nth-child(even) {
+    animation-delay: 0.4s;
+}
+
+/* Links */
+a {
+    color: #007bff;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #007bff;
+    color: white;
+    padding: 15px 0;
+    margin-top: 30px;
+    font-size: 1.1em;
+    transition: all 0.3s ease-in-out;
+}
+
+footer:hover {
+    background: #0056b3;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes popIn {
+    from {
+        opacity: 0;
+        transform: scale(0.8);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        left: -10px;
+    }
+    to {
+        opacity: 1;
+        left: 0;
+    }
+}
+
+@media (max-width: 1020px) {
+    main {
+        width: 95%; /* Slightly smaller than the 90% to optimize for small screens */
+        max-width: 900px; /* Keeps max width for smaller screens */
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+        max-width: 800px; /* Keeps max width for smaller screens */
+    }
+
+    nav ul {
+        display: flex;  /* Use flexbox instead of stacking */
+        justify-content: space-around;  /* Space out the items evenly */
+        flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    }
+
+    nav ul li {
+        margin: 10px;
+    }
+}
+
+/* Back to Top Button */
+#backToTop {
+    position: fixed;
+    bottom: 50px;
+    right: 30px;
+    display: none;
+    background: #007bff;
+    color: white;
+    padding: 12px 18px;
+    font-size: 1.2em;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+#backToTop:hover {
+    background: #0056b3;
+    transform: scale(1.1);
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>Term and Condition</li>
+                <li>Privacy Policy</li>
+                <li><a href="Web-4.html">𝗛𝗢𝗠𝗘</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="privacyPolicySection">
+            <h1>Privacy Policy <span class="shield-emoji">🛡️</span></h1>
+
+            <p>Your privacy is important to us. This privacy policy explains how we collect, use, and protect your personal information. By using our services, you agree to the collection and use of information in accordance with this policy. 🔐</p>
+
+            <h2>1. Information We Collect 📝</h2>
+            <p>We collect various types of information, including:</p>
+            <ul>
+                <li><strong>Personal Information:</strong> Name, email address, phone number, profile information, etc. 🧑‍💻</li>
+                <li><strong>Usage Data:</strong> IP addresses, browser type, pages visited, time spent on the site, etc. 🌐</li>
+                <li><strong>Device Information:</strong> Type of device, operating system, device identifiers, etc. 📱</li>
+                <li><strong>Location Data:</strong> We may collect location data when you use certain features on the platform. 🌍</li>
+            </ul>
+            </ul>
+
+            <h2>2. How We Protect Your Information 🔒</h2>
+            <p>Your personal information is secured through the following methods:</p>
+            <ul>
+                <li><strong>Encryption:</strong> All sensitive data is encrypted both in transit and at rest. 🔑</li>
+                <li><strong>Access Control:</strong> Only authorized personnel can access your data. 🛡️</li>
+                <li><strong>Regular Audits:</strong> We conduct regular audits to ensure that all security measures are up to date. 🔍</li>
+            </ul>
+
+            <h2>3. Changes to This Privacy Policy 🔄</h2>
+            <p>We may update this privacy policy from time to time. Any changes will be posted on this page, and the revised date will be noted at the top of the policy. We encourage you to review this policy periodically to stay informed about how we are protecting your data. 🔄</p>
+
+            <h2> Contact Us 📞</h2>
+            <p>If you have any questions or concerns about our privacy practices or this policy, please contact us at:</p>
+            <p>Email: <a href="gabrielagyeiyirenkyi0@gmail.com">info@gabxtech.com</a> ✉️<br>
+            Phone: +233-5333-99766📞</p>
+            <a href="https://wa.me/+233533399766">CONTACT US ON WHATSPP</a>
+        </section>
+    </main>
+
+    <button id="backToTop">⬆ Top</button>
+    <footer>
+        <p>&copy; 2025 GAB X. All rights reserved. ©️</p>
+    </footer>
+
+    
+</body>
+</html>

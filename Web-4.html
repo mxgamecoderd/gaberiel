@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gabriel's Personal Website</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background: #111;
+            text-align: center;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 200vh;
+            animation: gradientAnimation 10s infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% {
+                background: linear-gradient(45deg, #ff00ff, #00ffff);
+            }
+            25% {
+                background: linear-gradient(45deg, #ff007f, #7f00ff);
+            }
+            50% {
+                background: linear-gradient(45deg, #00ff00, #ffff00);
+            }
+            75% {
+                background: linear-gradient(45deg, #00ffff, #ff007f);
+            }
+            100% {
+                background: linear-gradient(45deg, #ff00ff, #00ffff);
+            }
+        }
+
+        .container {
+            max-width: 600px;
+            padding: 20px;
+            background: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
+            animation: scaleUp 1s ease-out;
+        }
+
+        @keyframes scaleUp {
+            0% {
+                transform: scale(0.8);
+                opacity: 0;
+            }
+            100% {
+                transform: scale(1);
+                opacity: 1;
+            }
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            font-family: 'Montserrat', sans-serif;
+            animation: fadeIn 1.5s ease-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            animation: fadeIn 2s ease-out;
+        }
+
+        .button {
+            display: block;
+            width: 80%;
+            position: center;
+            padding: 17px;
+            margin: 10px 0;
+            font-size: 1.1rem;
+            font-family: 'Poppins', sans-serif;
+            color: white;
+            background: rgba(255, 255, 255, 0.1);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            border-radius: 8px;
+            text-decoration: none;
+            transition: background 0.3s ease, transform 0.3s ease;
+            animation: slideUp 1.5s ease-out;
+        }
+
+        @keyframes slideUp {
+            0% {
+                transform: translateY(30px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .button:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: scale(1.05);
+        }
+
+        .button:active {
+            background: rgba(255, 255, 255, 0.3);
+            transform: scale(1);
+        }
+
+        .button:focus {
+            outline: none;
+        }
+
+        /* Import Google Fonts */
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Poppins:wght@400;600&display=swap');
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>彡Welcome to GAB-X Personal Website彡</h2>
+        <p>𝙷𝚎𝚕𝚕𝚘 𝙶𝚞𝚢𝚜👋. 𝙸'm 𝙶𝚊𝚋𝚛𝚒𝚎𝚕, 𝙰 𝚈𝚘𝚞𝚗𝚐  𝚆𝚎𝚋 𝙳𝚎𝚟𝚎𝚕𝚘𝚙𝚎𝚛 𝙰𝚗𝚍 𝙶𝚛𝚊𝚙𝚑𝚒𝚌 𝙳𝚎𝚜𝚒𝚐𝚗𝚎𝚛 𝚊𝚜 𝚠𝚎𝚕𝚕</p>
+        <img src="ajonakoji.jpg" alt=""width="200px" height="230px">
+        <a href="https://whatsapp.com/channel/0029Vb3xRx73wtb8XnCLzF0F" class="button">ᴡʜᴀᴛsᴀᴘᴘ ᴄʜᴀɴɴᴇʟ</a>
+        <a href="https://chat.whatsapp.com/DOQY3vW9w5Y3mkGFQtFUwG" class="button">ᴡʜᴀᴛsᴀᴘᴘ ɢʀᴏᴜᴘ</a>
+        
+        <p style="margin-top: 30px;">𝙂𝙚𝙩 𝙞𝙣 𝙘𝙤𝙣𝙩𝙖𝙘𝙩 𝙒𝙞𝙩𝙝 𝙂𝙖𝙗𝙧𝙞𝙚𝙡 𝙤𝙣 : </p>
+        
+        <a href="https://wa.me/+233533399766" class="button">ᴡʜᴀᴛsᴀᴘᴘ</a> 
+        <a href="https://telegram.me/GabrielAgyeiYirenkyi" class="button">ᴛᴇʟᴇɢʀᴀᴍ</a> 
+        <a href="https://github.com/Gab-77" class="button">ɢɪᴛʜᴜʙ</a>
+        <br>
+        READ OUR POLICY
+        <a href="policy.html" class="button">𝙏𝙀𝙍𝙈𝙎 𝘼𝙉𝘿 𝘾𝙊𝙉𝘿𝙄𝙏𝙄𝙊𝙉</a>
+    </div>
+</body>
+</html>
